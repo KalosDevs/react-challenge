@@ -30,6 +30,7 @@ const OpcionSeleccion: React.FC<OpcionSeleccionProps> = ({
             : styles["planes-coberturas__body__content__seleccion__opcion__check"]
         }
         onClick={onClick}
+        data-testid="opcion-seleccion-check"
       />
     </div>
     <div className={iconClass}></div>

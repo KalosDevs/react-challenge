@@ -6,8 +6,8 @@
   width: 100%;
   background: #03050F;
   border-top: 1px solid #eee;
-  margin-bottom: 0; // Eliminar margen inferior
-  box-sizing: border-box; // Para que padding y border se incluyan en el width/height
+  margin-bottom: 0;
+  box-sizing: border-box;
 
   &__container {
     max-width: 1200px;
@@ -35,7 +35,7 @@
     line-height: 16px;
     letter-spacing: 0px;
     vertical-align: middle;
-    margin: 0; // Eliminar margen
+    margin: 0;
   }
 }
 
@@ -60,12 +60,12 @@
       top: auto;
       left: 50%;
       transform: translateX(-50%);
-      width: 80%; // Ancho de la línea
-      height: 1px; // Grosor de la línea
-      background-color: #2B304E; // Color de la línea
-      margin-top: 1rem; // Espacio después del logo
+      width: 80%;
+      height: 1px;
+      background-color: #2B304E;
+      margin-top: 1rem;
       position: absolute;
-      top: 65px; // Posicionar después del logo
+      top: 65px;
     }
     
   }
@@ -76,6 +76,6 @@
     font-size: 12px;
     text-align: center;
     width: 100%;
-    margin: 0; // Asegurar que no hay margen
+    margin: 0;
   }
 }

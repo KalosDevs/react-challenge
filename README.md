@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+# Reto Rimac Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto fue desarrollado como parte del Rimac Challenge utilizando [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📦 Librerías y bibliotecas utilizadas
 
-### `npm start`
+- **React**: Librería principal para la construcción de interfaces de usuario. Elegido por su eficiencia, modularidad y gran comunidad, ideal para construir interfaces de usuario modernas y escalables.
+- **React Router DOM**: Para la navegación entre páginas y manejo de rutas.
+- **Sass (SCSS)**: Para el manejo de estilos de forma modular y escalable.
+- **classnames**: Para manejar clases condicionales en los componentes.
+- **PropTypes / TypeScript**: (según configuración) Para tipado y validación de props.
+- **Jest y React Testing Library**: Para pruebas unitarias y de integración.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### ¿Por qué estas librerías?
+- **React** es el estándar de facto para SPAs modernas.
+- **React Router DOM** facilita la navegación y el manejo de estados entre rutas.
+- **Sass** permite escribir estilos más organizados y reutilizables.
+- **classnames** simplifica la lógica de clases dinámicas.
+- **Testing Library** y **Jest** aseguran la calidad del código mediante pruebas.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+---
 
-### `npm test`
+## 🛠️ División de tareas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Estructura y rutas**: Se definieron primero los componentes principales y las rutas usando React Router.
+- **Componentes reutilizables**: Se crearon componentes como `HeaderPasos`, `OpcionSeleccion`, `Navbar`, etc., para mantener el código modular.
+- **Estilos**: Se trabajó con SCSS Modules para aislar los estilos por componente y facilitar el mantenimiento.
+- **Lógica de negocio**: Se implementó la lógica de filtrado de planes, manejo de estados y navegación.
+- **Responsive y UX**: Se adaptó la interfaz para escritorio y mobile, incluyendo el carrusel de planes en mobile.
+- **Testing**: Se agregaron pruebas unitarias para los componentes clave.
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 ¿Cómo levantar el proyecto?
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Clona el repositorio**
+   ```bash
+   git clone [URL_DEL_REPOSITORIO]
+   cd react-challenge

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import styles from './Home.module.scss';
 import { useFormValidation } from './hooks/useFormValidation';
 import { useUser } from '../../hooks/useUser';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 import { AfiliadoData } from './types/afiliado';
 
 

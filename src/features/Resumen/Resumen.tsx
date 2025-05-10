@@ -1,5 +1,5 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation } from "react-router";
 import { User } from "../../types/user";
 import { AfiliadoData } from "../Home/types/afiliado";
 import { Plan } from "../Cotizacion/types/plan";

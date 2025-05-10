@@ -1,10 +1,9 @@
-// src/features/Cotizacion/Cotizacion.tsx
 import React, { useState } from 'react';
-import Navbar from '../../components/Navbar/Nabvar'; // Asegúrate de que la ruta sea correcta
+import Navbar from '../../components/Navbar/Nabvar';
 import styles from './Cotizacion.module.scss';
 import { usePlans } from './hooks/usePlans';
 import { User } from '../../types/user';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router';
 import { AfiliadoData } from '../Home/types/afiliado';
 import OpcionSeleccion from './components/OpcionSeleccion';
 import HeaderPasos from '../../components/HeaderPasos/HeaderPasos';
@@ -31,7 +30,7 @@ const Cotizacion: React.FC = () => {
 
   const getPlanPrice = (planPrice: number) => {
     if (selected === "paraotro") {
-      return (planPrice * 0.95).toFixed(2); // 5% de descuento
+      return (planPrice * 0.95).toFixed(2);
     }
     return planPrice.toFixed(2);
   };
