@@ -1,0 +1,481 @@
+@use '../../styles/variables' as *;
+@import '../../styles/_typography';
+
+body{
+    background-color: #F8F9FF;
+}
+.home {
+    height: calc(100vh - 161px - 4rem);
+
+    &__title {
+        padding: 0.35em 0.75em 0.35em 0.75em;
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+        font-family: 'BR Sonoma';
+        display: inline-block !important;
+        background: linear-gradient(86.01deg, #00F4E2 0%, #00FF7F 100%);
+    }
+
+    &__subtitle {
+        margin: 0.75em 0 0.25em 0;
+        color: #03050F;
+        font-family: 'BR Sonoma Bold';
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 0%;
+
+    }
+
+    &__description {
+        margin-bottom: 1em;
+        font-family: 'BR Sonoma Light';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+
+    }
+
+
+    &__content {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    &__grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "image header"
+            "image main";
+        width: 100%;
+        gap: 0;
+    }
+
+    &__image-container {
+        grid-area: image;
+        background-image: $home-seguro-familia-image;
+        background-size: contain;
+        background-repeat: no-repeat;
+        min-width: 0;
+        min-height: 400px;
+        width: 100%;
+    }
+
+    &__header {
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        max-width: 352px;
+        padding-left: 2em;
+        align-items: flex-start;
+    }
+
+    &__main-content {
+        grid-area: main;
+        padding: 0 4em 0 2em;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+
+    &__layout {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__image-container {
+        background-image: $home-seguro-familia-image;
+        background-size: contain;
+        background-repeat: no-repeat;
+        flex: 1;
+        min-width: 480px;
+        min-height: 560px;
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .seguro-salud {
+        flex: 1;
+        max-width: 352px;
+        background-color: transparent;
+        padding: 0 2em 2em 8em;
+        border-radius: 8px;
+        font-family: 'BR Sonoma';
+
+        &__title {
+            padding: 0.35em 0.75em 0.35em 0.75em;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 0.4px;
+            vertical-align: middle;
+
+            background: linear-gradient(86.01deg, #00F4E2 0%, #00FF7F 100%);
+
+        }
+
+        &__subtitle {
+            margin: 0.75em 0 0.25em 0;
+            color: #03050F;
+            font-family: 'BR Sonoma Bold';
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 40px;
+            letter-spacing: 0%;
+
+        }
+
+
+        &__description {
+            margin-bottom: 1em;
+            font-family: 'BR Sonoma Light';
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: 0.2px;
+
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 15px;
+        }
+
+        &__form-group {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        &__input-container {
+            position: relative;
+            display: flex;
+            width: 100%;
+            margin-bottom: 1em;
+        }
+
+        &__input {
+            width: 100%;
+            height: 56px;
+            padding: 24px 16px 8px 24px;
+            border-radius: 8px;
+            border: 1px solid #5E6488;
+            font-family: 'BR Sonoma';
+            box-sizing: border-box;
+            color: #03050F;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0px;
+
+            &--documento {
+                flex: 1;
+                height: 56px;
+                padding: 24px 16px 8px 24px;
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;
+                border: 1px solid #5E6488;
+                border-left: none;
+                box-sizing: border-box;
+                color: #03050F;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0px;
+
+                &:focus {
+                    outline: none;
+                    border-color: #5E6488;
+                }
+            }
+        }
+
+        &__placeholder {
+            position: absolute;
+            left: 16px;
+            top: 20px;
+            transform: none;
+            color: #5E6488;
+            transition: all 0.3s ease;
+            pointer-events: none;
+            z-index: 1;
+            background-color: white;
+            padding: 0 6px;
+            margin-left: -4px;
+            font-size: 16px;
+
+            &--active {
+                top: 2px;
+                transform: scale(0.8);
+                z-index: 3;
+                padding: 0 -2px;
+            }
+        }
+
+        &__document-container {
+            display: flex;
+            align-items: stretch;
+            width: 100%;
+
+            .seguro-salud__input-container {
+                flex: 1;
+            }
+        }
+
+        &__document-select {
+            width: 140px;
+            height: 56px;
+            padding: 16px;
+            border-right: 1px solid #5E6488;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            appearance: none;
+            background-color: white;
+            background-image: $vector_select_image;
+            background-repeat: no-repeat;
+            background-position: right 16px center;
+            background-size: 16px;
+            padding-right: 40px;
+            box-sizing: border-box;
+            cursor: pointer;
+
+            &:focus {
+                outline: none;
+                border-color: #3498db;
+            }
+        }
+
+
+        &__checkbox {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: white;
+            position: relative;
+
+            &:checked {
+
+                background-color: #0A051E;
+                border-color: #0A051E;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 40%;
+                    left: 50%;
+                    transform: translate(-50%, -50%) rotate(45deg);
+                    width: 4px;
+                    height: 8px;
+                    border: solid 1px #FFFFFF;
+                    border-width: 0 2px 2px 0;
+                }
+            }
+        }
+
+        &__checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &__checkbox-label {
+            appearance: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'BR Sonoma Light';
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.1px;
+            vertical-align: middle;
+        }
+
+        &__terms {
+            font-family: 'BR Sonoma';
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 20px;
+            letter-spacing: 0.1px;
+            text-decoration: underline;
+            text-decoration-style: solid;
+            text-decoration-thickness: 0%;
+
+        }
+
+        &__submit {
+            width: 195px;
+            height: 64px;
+            gap: 8px;
+            margin-top: 1em;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 40px;
+            background: #03050F;
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.4px;
+            text-align: center;
+            cursor:pointer
+        }
+    }
+}
+
+.input-error {
+  border: 1.5px solid #F7052D !important;
+}
+
+.input-error-space {
+  margin-bottom: 0 !important;
+}
+
+
+
+.input-error-message {
+  color: #F7052D;
+  font-size: 13px;
+  margin-top: 4px;
+  margin-left: 4px;
+  margin-bottom: 1em;
+}
+
+.input-error-message-checbox {
+  color: #F7052D;
+  font-size: 13px;
+  margin-left: 4px;
+  margin-bottom: 1em;
+}
+
+.input-group-error-checkbox{
+    gap: 0 !important;
+}
+
+@media (max-width: 1240px) {
+    .home {
+        height:  calc(100vh - 300px);
+        &__grid {
+            grid-template-columns: 60% 40%;
+            grid-template-rows: auto auto;
+            grid-template-areas:
+                "header image"
+                "main main";
+            gap: 0 1rem;
+            position: relative;
+
+        }
+
+        &__divider {
+            grid-column: 1 / span 2;
+            grid-row: 2 / 3;
+            height: 1px;
+            width: 100%;
+            background: #CCD1EE;
+            margin-top: 1em;
+            z-index: 2;
+        }
+
+        &__title {
+            font-size: 12px;
+        }
+
+        &__subtitle {
+            font-size: 28px;
+            padding: 0 0 0.25em 0;
+            ;
+
+        }
+
+        &__image-container {
+            min-height: 0;
+            min-width: 0;
+            min-height: 160px;
+        }
+
+        &__header {
+            padding-bottom: 0;
+            padding-left: 0;
+            justify-content: flex-start;
+        }
+
+        &__main-content {
+            padding: 2rem 0 0 0;
+        }
+
+        
+
+        .seguro-salud {
+            &__input {
+                &--documento {
+                    padding-right: 0;
+                }
+            }
+
+            &__checkbox-label {
+font-size: 14px;
+
+        }
+
+            &__placeholder {
+            position: absolute;
+            left: 16px;
+            top: 20px;
+            transform: none;
+            color: #5E6488;
+            transition: all 0.3s ease;
+            pointer-events: none;
+            z-index: 1;
+            background-color: white;
+            padding: 0 6px;
+            margin-left: -4px;
+            font-size: 16px;
+
+            &--active {
+                top: 2px;
+                transform: scale(0.8);
+                z-index: 3;
+                padding: 0;
+            }
+        }
+
+            &__submit {
+                width: 100%;
+            }
+
+        }
+
+
+
+    }
+}

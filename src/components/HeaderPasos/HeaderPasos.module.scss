@@ -1,0 +1,110 @@
+.header {
+  font-family: 'Lato';
+  background-color: #EDEFFC;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+  height: 56px;
+}
+
+.divider {
+  color: #4F4FFF;
+  font-weight: 700;
+}
+
+.paso {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  padding-left: 0.5em;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #7981B2;
+}
+
+.labelActivo {
+  padding-left: 0.5em;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #141938;
+}
+
+.circulo {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  color: #7981B2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  border: #7981B2 1px solid;
+  font-size: 12px;
+  margin-right: 8px;
+  background: transparent;
+}
+
+.circuloActivo {
+  @extend .circulo;
+  background: #4F4FFF;
+  color: #FFFFFF;
+  border: none;
+}
+
+.volver {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 50%;
+  padding-left: 32px;
+  box-sizing: border-box;
+  margin-top: 2em;
+}
+
+.volverIcon {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #4F4FFF;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-left: 2px solid #4F4FFF;
+    border-bottom: 2px solid #4F4FFF;
+    position: absolute;
+    left: 6px;
+    top: 5px;
+    transform: rotate(45deg);
+  }
+}
+
+.volverText {
+  font-family: Lato;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  text-align: center;
+  vertical-align: middle;
+  color: #4F4FFF;
+  cursor: pointer;
+}

@@ -1,0 +1,81 @@
+@use '../../styles/variables' as *;
+@import '../../styles/_typography';
+
+.footer {
+  position: relative;
+  width: 100%;
+  background: #03050F;
+  border-top: 1px solid #eee;
+  margin-bottom: 0; // Eliminar margen inferior
+  box-sizing: border-box; // Para que padding y border se incluyan en el width/height
+
+  &__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  &__logo {
+    width: 120px;
+    height: 40px;
+    background-image: $logo_footer;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &__text {
+    font-family: 'BR Sonoma Light';
+    color: #F8F9FF;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin: 0; // Eliminar margen
+  }
+}
+
+@media (max-width: 1240px) {
+   .footer {
+    display: flex;
+    align-items: flex-start;
+
+    &__logo {
+    background-image: $logo_rimac_bottom;
+  }
+  }
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    height: auto;
+
+    &::after {
+      content: '';
+      top: auto;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80%; // Ancho de la línea
+      height: 1px; // Grosor de la línea
+      background-color: #2B304E; // Color de la línea
+      margin-top: 1rem; // Espacio después del logo
+      position: absolute;
+      top: 65px; // Posicionar después del logo
+    }
+    
+  }
+  .footer__logo {
+    margin-bottom: 2rem;
+  }
+  .footer__text {
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    margin: 0; // Asegurar que no hay margen
+  }
+}
