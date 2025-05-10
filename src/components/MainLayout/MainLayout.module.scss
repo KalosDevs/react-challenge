@@ -48,3 +48,16 @@ body {
     padding: 2rem 3rem 2rem 2rem;
   }
 }
+
+@media (max-width: 900px) {
+  .main-layout__blur--left{
+    top: 40%;
+      right: -8em;
+  }
+
+  .main-layout__blur--right{
+    top: 10%;
+      right: -18em;
+      z-index: 999;
+  }
+}
