@@ -14,10 +14,10 @@ Este proyecto fue desarrollado como parte del Rimac Challenge utilizando [Create
 - **Jest y React Testing Library**: Para pruebas unitarias y de integración.
 
 ### ¿Por qué estas librerías?
-- **React** es el estándar de facto para SPAs modernas.
+- **React** es un buena herramienta para desarrollo de aplicaciones modernas.
 - **React Router DOM** facilita la navegación y el manejo de estados entre rutas.
 - **Sass** permite escribir estilos más organizados y reutilizables.
-- **classnames** simplifica la lógica de clases dinámicas.
+- **La Metodología BEM** simplifica la lógica de clases dinámicas.
 - **Testing Library** y **Jest** aseguran la calidad del código mediante pruebas.
 
 ---
